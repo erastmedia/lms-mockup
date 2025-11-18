@@ -1,6 +1,6 @@
 // src/pages/ProtaPromesPage.tsx
 import React, { useState } from "react";
-import { PlusCircle, Bell, Search, Filter, Download } from "lucide-react";
+import { PlusCircle, Bell, Search, Filter, Download, Sun } from "lucide-react";
 
 const ProtaPromesPage: React.FC = () => {
   const today = new Date();
@@ -106,6 +106,11 @@ const ProtaPromesPage: React.FC = () => {
             </button>
             <button className="relative p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-slate-800 transition">
               <Bell size={18} />
+              <span className="absolute -top-1 -right-1 h-2 w-2 bg-rose-500 rounded-full"/>
+            </button>
+            <button className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-zinc-100 hover:bg-zinc-200 text-zinc-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle theme">
+              <Sun size={16}/>
+              <span className="text-xs hidden md:inline">Light Mode</span>
             </button>
           </div>
         </div>
