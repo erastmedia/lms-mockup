@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Opsional: styling dasar */
+body {
+  @apply bg-zinc-50 text-zinc-900 dark:bg-slate-950 dark:text-slate-100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
