@@ -1,5 +1,6 @@
 // import React from "react";
 import { Outlet, NavLink } from "react-router-dom";
+import type { ReactNode } from "react";
 import {
   Home,
   BookOpen,
@@ -125,7 +126,13 @@ function Sidebar() {
   );
 }
 
-function SidebarItem({ icon, label, to }) {
+type SidebarItemProps = {
+  icon: ReactNode;
+  label: string;
+  to: string;
+};
+
+function SidebarItem({ icon, label, to }: SidebarItemProps) {
   return (
     <NavLink
       to={to}
@@ -143,7 +150,11 @@ function SidebarItem({ icon, label, to }) {
   );
 }
 
-function SidebarSection({ title }) {
+type SidebarSectionProps = {
+  title: string;
+};
+
+function SidebarSection({ title }: SidebarSectionProps) {
   return (
     <p className="text-[11px] uppercase tracking-wider text-zinc-500 dark:text-slate-500 mt-4 mb-1 px-3">
       {title}

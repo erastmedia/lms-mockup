@@ -27,7 +27,7 @@ type Artefak = {
   jenis: ArtefakType;
   judul: string;
   deskripsi: string;
-  sumber: "Projek Profil Pancasila" | "PKL" | "Praktik Bengkel" | "Tugas Kelas";
+  sumber: "Projek Profil Pancasila" | "PKL" | "Praktik Bengkel" | "Tugas Kelas" | "Projek Mini";
   tanggal: string;
   mapel: string;
   kelas: string;

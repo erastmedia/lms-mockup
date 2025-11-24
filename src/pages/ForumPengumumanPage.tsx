@@ -15,7 +15,7 @@ import {
   Sun
 } from "lucide-react";
 
-type TopicType = "Diskusi" | "Pengumuman Kelas" | "Pengumuman Sekolah";
+type TopicType = "Diskusi" | "Pengumuman Kelas" | "Pengumuman Sekolah" | "Tugas";
 
 type ForumTopic = {
   id: number;
